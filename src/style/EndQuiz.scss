@@ -1,0 +1,17 @@
+@import "./mixins";
+@import "./variables";
+
+.endQuiz {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  @include flex(flex-start, center, column);
+
+  h2 {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    margin: 20px 0;
+    color: $color;
+    text-align: center;
+  }
+}

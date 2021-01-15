@@ -1,0 +1,41 @@
+@import "./mixins";
+@import "./variables";
+
+.question {
+  width: 100%;
+  height: 100%;
+  @include flex(flex-start, center, column);
+
+  h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: $color;
+  }
+
+  .question__container {
+    margin-top: 20px;
+    h2 {
+      margin: 20px 0;
+      text-align: center;
+      color: $color;
+    }
+  }
+
+  .question__options {
+    margin: 5px;
+    padding: 10px;
+    @include flex(space-evenly, center);
+
+    > button {
+      margin: 5px;
+      flex: 1;
+      min-width: fit-content;
+    }
+  }
+
+  .question__nextButton {
+    margin: 5px 0;
+  }
+}
